@@ -12,10 +12,10 @@ public class EnemyShooting : Shooting<Enemy>
         if (_corrotine != null)
             StopCoroutine(_corrotine);
 
-        _corrotine = StartCoroutine(Shoote());
+        _corrotine = StartCoroutine(Shoot());
     }
 
-    private IEnumerator Shoote()
+    private IEnumerator Shoot()
     {
         WaitForSeconds wait;
 
