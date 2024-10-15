@@ -32,4 +32,9 @@ public class Enemy : MonoBehaviour
     {
         _shooting.Init();
     }
+
+    public void CreatedInit(FireBallPool pool)
+    {
+        _shooting.CreatedInit(pool);
+    }
 }
