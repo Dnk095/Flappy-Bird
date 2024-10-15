@@ -1268,6 +1268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 1096661313}
   _prefab: {fileID: 1730182473, guid: 758bce8cbbda9474b9f16dfdd6daf95e, type: 3}
+  _fireBalls: {fileID: 1892335076}
 --- !u!1 &1193691618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,7 +1962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startPosition: {fileID: 1427338709}
-  _pool: {fileID: 1892335076}
+  Pool: {fileID: 1892335076}
 --- !u!1 &2139772774
 GameObject:
   m_ObjectHideFlags: 0
