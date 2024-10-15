@@ -44,7 +44,7 @@ public class Pool<T> : MonoBehaviour where T : MonoBehaviour
         spawnedObject.gameObject.SetActive(true);
     }
 
-    private T CreateObject()
+    protected virtual T CreateObject()
     {
         T spawned = Instantiate(_prefab);
         spawned.transform.parent = _container;
