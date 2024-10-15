@@ -3,11 +3,11 @@ using UnityEngine;
 public abstract class Shooting<T> : MonoBehaviour where T : MonoBehaviour
 {
     [SerializeField] private Transform _startPosition;
-    [SerializeField] protected FireBallPool _pool;
+    [SerializeField] protected FireBallPool Pool;
 
     protected virtual FireBall Shoot(Vector3 direction)
     {
-        FireBall fireBall = _pool.GetObject();
+        FireBall fireBall = Pool.GetObject();
         fireBall.Init(direction, gameObject.layer, _startPosition.transform);
 
         return fireBall;
