@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7737566499145437103}
   - component: {fileID: 1730182473}
   - component: {fileID: -2458802247124184427}
-  - component: {fileID: -6484028302627044999}
   m_Layer: 6
   m_Name: Enemy Variant
   m_TagString: Untagged
@@ -162,22 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startPosition: {fileID: 2705291682191678673}
-  _pool: {fileID: -6484028302627044999}
-  _delay: 3
---- !u!114 &-6484028302627044999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4516263165641564391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 607092e808b566245860295e02436cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _container: {fileID: 4516263165641564384}
-  _prefab: {fileID: 8066627099263627300, guid: e29a952bb0e1b884d8abfab957c3d6ab, type: 3}
+  Pool: {fileID: 0}
 --- !u!1 &6510007386009243797
 GameObject:
   m_ObjectHideFlags: 0
