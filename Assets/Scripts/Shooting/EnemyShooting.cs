@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class EnemyShooting : Shooting<Enemy>
 {
-
     private Vector3 _direction = Vector3.left;
     private Coroutine _corrotine;
 
@@ -13,6 +12,11 @@ public class EnemyShooting : Shooting<Enemy>
             StopCoroutine(_corrotine);
 
         _corrotine = StartCoroutine(Shoot());
+    }
+
+    public void CreatedInit(FireBallPool pool)
+    {
+        Pool = pool;
     }
 
     private IEnumerator Shoot()
