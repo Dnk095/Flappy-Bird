@@ -1,9 +1,8 @@
 using System.Collections;
 using UnityEngine;
 
-public class EnemyShooting : Shooting<Enemy>
+public class EnemyShot : Shot<Enemy>
 {
-    private Vector3 _direction = Vector3.left;
     private Coroutine _corrotine;
 
     public void Init()
@@ -33,7 +32,7 @@ public class EnemyShooting : Shooting<Enemy>
 
             yield return wait;
 
-            Shoot(_direction);
+            Shoot(transform.rotation);
         }
     }
 }

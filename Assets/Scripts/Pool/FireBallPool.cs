@@ -8,9 +8,9 @@ public class FireBallPool : Pool<FireBall>
         fireBall.Releasing += OnRelease;
     }
 
-    protected override void OnRelease(FireBall spawnedObject)
+    protected override void OnRelease(FireBall fireBall)
     {
-        base.OnRelease(spawnedObject);
-        spawnedObject.Releasing -= OnRelease;
+        base.OnRelease(fireBall);
+        fireBall.Releasing -= OnRelease;
     }
 }

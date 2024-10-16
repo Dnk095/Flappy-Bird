@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour, IInteractable
 {
     private float _speed = 10f;
-    private Vector3 _directional;
+    private Quaternion _rotate;
 
     public event Action<FireBall> Releasing;
     public event Action<FireBall> Killed;
@@ -23,17 +23,19 @@ public class FireBall : MonoBehaviour, IInteractable
     public void Kill()
     {
         Killed?.Invoke(this);
+        Release();
     }
 
-    public void Init(Vector3 direction,LayerMask layerMask, Transform currentPosition)
+    public void Init(Quaternion rotate, LayerMask layerMask, Transform currentPosition)
     {
-        _directional = direction;
+        _rotate = rotate;
         gameObject.layer = layerMask;
         transform.position = currentPosition.position;
     }
 
     private void Move()
     {
-        transform.position += _directional * _speed * Time.deltaTime;
+        transform.rotation = _rotate;
+        transform.Translate(Vector3.right * _speed * Time.deltaTime, Space.Self);
     }
 }

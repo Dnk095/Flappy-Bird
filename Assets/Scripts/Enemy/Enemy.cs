@@ -1,23 +1,22 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(EnemyShooting))]
+[RequireComponent(typeof(EnemyShot))]
 public class Enemy : MonoBehaviour
 {
-    private EnemyShooting _shooting;
+    private EnemyShot _shooting;
 
     public event Action<Enemy> Releasing;
 
     private void Awake()
     {
-        _shooting = GetComponent<EnemyShooting>();
+        _shooting = GetComponent<EnemyShot>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out FireBall fireBall) && fireBall.gameObject.layer != gameObject.layer)
         {
-            fireBall.Release();
             fireBall.Kill();
             Release();
         }

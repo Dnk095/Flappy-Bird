@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4516263165641564390}
   - component: {fileID: 7737566499145437103}
   - component: {fileID: 1730182473}
-  - component: {fileID: -2458802247124184427}
+  - component: {fileID: 7021487428551360972}
   m_Layer: 6
   m_Name: Enemy Variant
   m_TagString: Untagged
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd501e888efdee42b1c625da6c41750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-2458802247124184427
+--- !u!114 &7021487428551360972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4516263165641564391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a25edfcba2df8884bb368948d794368d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2404f9ddb5330ef45a9069ec5ef445cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _startPosition: {fileID: 2705291682191678673}
