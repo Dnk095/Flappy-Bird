@@ -13,7 +13,7 @@ public class EnemyShot : Shot<Enemy>
         _corrotine = StartCoroutine(Shoot());
     }
 
-    public void CreatedInit(FireBallPool pool)
+    public void InitCreatedFireball(FireBallPool pool)
     {
         Pool = pool;
     }

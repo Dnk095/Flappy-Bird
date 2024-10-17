@@ -7,7 +7,7 @@ public class EnemyPool : Pool<Enemy>
     protected override void Spawn(Enemy spawnedObject)
     {
         base.Spawn(spawnedObject);
-        spawnedObject.ShootingInit();
+        spawnedObject.Init();
         spawnedObject.Releasing += OnRelease;
     }
 

@@ -27,7 +27,7 @@ public class Bird : MonoBehaviour
         _collisionHandler.CollisionDetected += ProcessCollision;
         _shooting.KillEnemy += OnKillEenmy;
         _inputReader.MoveUp += OnMoveUp;
-        _inputReader.Attack += OnAttack;
+        _inputReader.Attackiing += OnAttack;
     }
 
     private void OnDisable()
@@ -35,7 +35,7 @@ public class Bird : MonoBehaviour
         _collisionHandler.CollisionDetected -= ProcessCollision;
         _shooting.KillEnemy -= OnKillEenmy;
         _inputReader.MoveUp -= OnMoveUp;
-        _inputReader.Attack -= OnAttack;
+        _inputReader.Attackiing -= OnAttack;
     }
 
     public void Reset()

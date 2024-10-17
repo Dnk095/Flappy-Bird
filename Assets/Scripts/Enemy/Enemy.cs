@@ -27,13 +27,13 @@ public class Enemy : MonoBehaviour
         Releasing?.Invoke(this);
     }
 
-    public void ShootingInit()
+    public void Init()
     {
         _shooting.Init();
     }
 
     public void CreatedInit(FireBallPool pool)
     {
-        _shooting.CreatedInit(pool);
+        _shooting.InitCreatedFireball(pool);
     }
 }
